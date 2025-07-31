@@ -2,86 +2,267 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laurel Dsouza</title>
-
-    <link rel="stylesheet" href="css\styles.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Laurel - Full Stack Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Sacramento&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Sacramento&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@100;400&family=Sacramento&display=swap" rel="stylesheet">
-
-    <div class="navbar">
-      <a href="index.html">Home</a>
-      <a class="disabled" href="#news">Projects</a>
-      <a class="disabled" href="#contact">About Me</a>
-    </div>
-
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-  
-
-    <div class="top-container">
-        <img class="top-cloud" src="images/cloud-dark.png" alt="cloud-img">
-        <h1 >I'm Laurel.</h1>
-        <h2>a <span style="text-decoration: underline;">pro</span>grammer.</h2>
-        <img class="bottom-cloud" src="images/cloud-dark.png" alt="cloud-img">
-        <img src="images/mountain.png" alt="mountain-img">
-
-    </div>
-
-    <div class="middle-container">
-        <div class="profile">
-          <!--
-          <img class="profile" src="https://media4.giphy.com/media/Hb1m3Eo7Brsdk2ywQF/200w.webp?cid=ecf05e47x8n6hlc3gejyp7apbmx15kk8xf6fdtz7dbcd7kuu&rid=200w.webp&ct=s" alt="profile-pic">
-          -->
-          <a>
-            <img style="height: 300px;" src="images/gojo-closed.png" /> 
-            <img style="height: 300px;" src="images/gojo-opened.png" />
-         </a>
-        
-          <h2>Hello.</h2>
-          <p style="width: 30%; margin: 20px auto; line-height: 2;">I am a Computer Science students who ❤ playing Video Games and watching anime.I am also down for a binge session of a good show anytime📺.</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active" data-page="home">Home</a></li>
+                <li><a href="#projects" class="nav-link" data-page="projects">Projects</a></li>
+                <li><a href="#contact" class="nav-link" data-page="contact">Contact</a></li>
+            </ul>
         </div>
-        
-        <div class="skills">
-            <hr style="width: 5%; margin: 250px auto 100px auto;">
-          <h2>My Skills.</h2>
-          <div class="skill-row" style="margin-top: 100px;">
-            <img class="skill-pic" style="float: left;" src="https://media1.giphy.com/media/QssGEmpkyEOhBCb7e1/200w.webp?cid=ecf05e4748is9vqjh6m4v4fnc2q53hgo9cgz6hw11q9spsz5&rid=200w.webp&ct=s" alt="design-and-development">
-            <h3>Design & Development</h3>
-            <p>An amatuer web developer still learning the ropes.</p>
-          </div>
-          <div class="skill-row">
-            <img class="skill-pic" style="float: right;" src="https://media3.giphy.com/media/Ig9phyxs1ePIBSZDKS/giphy.webp?cid=ecf05e475yiax8gt9zcdh9ylpi40vkk0u38jfy6035v2ukxx&rid=giphy.webp&ct=s" alt="video-games">
-            <h3>Video Games</h3>
-            <p>I started playing games when I was 6 and they have managed to keep me intrested to date.</p>
-          </div>
-          <div class="skill-row">
-            <img class="skill-pic" style="float: left;" src="https://media3.giphy.com/media/EEfjNSvFOnsMBtwSIw/200.webp?cid=ecf05e470xv26ja41gve7sq8qjd71cw3nb0igmvxx4day7u3&rid=200.webp&ct=s" alt="art">
-            <h3>Drawing</h3>
-            <p>I have loved drawing for as long as I can remember and I hope to keep doing it till i can't anymore.</p>
-          </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <div class="content-grid">
+                <!-- Education Card -->
+                <div class="card who-am-i">
+                    <h2>Education</h2>
+                    <div class="education-item">
+                        <h3>MSc Mathematical Modelling and Machine Learning</h3>
+                        <p>University College Cork</p>
+                        <ul class="education-details">
+                            <li>Built Python-based simulations for economic models and engineering systems</li>
+                            <li>Trained deep learning architectures using TensorFlow and Keras</li>
+                            <li>Applied EDA, statistical inference, and dimensionality reduction to real-world datasets</li>
+                        </ul>
+                    </div>
+                    <div class="education-item">
+                        <h3>Bachelor of Computer Engineering</h3>
+                        <p>Fr. C Rodrigues Institute of Technology</p>
+                        <ul class="education-details">
+                            <li>Worked with systems programming, cloud tools (AWS), and distributed systems</li>
+                            <li>Applied quantitative analysis, algorithm design, and database principles in projects</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Name Card -->
+                <div class="card name-card">
+                    <h2>Laurel</h2>
+                    <p>laurelld@gmail.com</p>
+                </div>
+
+                <!-- Technologies Card -->
+                <div class="card technologies">
+                    <h2>Technologies I have worked with</h2>
+                                         <div class="tech-grid">
+                         <div class="tech-item">Java</div>
+                         <div class="tech-item">Python</div>
+                         <div class="tech-item">C#</div>
+                         <div class="tech-item">React</div>
+                         <div class="tech-item">MongoDB</div>
+                         <div class="tech-item">Git</div>
+                         <div class="tech-item">Bash</div>
+                         <div class="tech-item">AWS</div>
+                     </div>
+                </div>
+
+                <!-- GitHub Card -->
+                <div class="card github-card">
+                    <a href="https://github.com/GingerBrains" target="_blank" class="github-link">
+                        <div class="github-icon">
+                            <svg width="80" height="80" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </div>
+                        <h2>GitHub</h2>
+                        <p>Check out my projects</p>
+                    </a>
+                </div>
+
+                <!-- Who am I Card -->
+                <div class="card education">
+                    <h2>Who am I?</h2>
+                    <p>
+                        Computer Engineering graduate with an MSc in Machine Learning and experience in Python, Java, SaaS 
+                        systems, and cloud-native infrastructure. I am passionate about creating software solutions that 
+                        solve real-world problems. If you have a project that you would like to work on, feel free to contact me.
+                    </p>
+                </div>
+
+                <!-- Skills Card -->
+                <div class="card skills">
+                    <h2>Key Skills</h2>
+                    <div class="skills-list">
+                        <div class="skill-item">Full Stack Development</div>
+                        <div class="skill-item">Problem Solving</div>
+                        <div class="skill-item">System Design</div>
+                        <div class="skill-item">Database Design</div>
+                        <div class="skill-item">Version Control</div>
+                    </div>
+                </div>
+
+                <!-- Experience Card -->
+                <div class="card experience">
+                    <h2>Experience</h2>
+                    <div class="experience-item">
+                        <h3>Project Development</h3>
+                        <p>Built multiple full-stack applications using modern technologies and best practices.</p>
+                    </div>
+                    <div class="experience-item">
+                        <h3>Open Source</h3>
+                        <p>Active contributor to various open source projects, collaborating with developers worldwide.</p>
+                    </div>
+                </div>
+
+                <!-- Interests Card -->
+                <div class="card interests">
+                    <h2>Interests</h2>
+                    <div class="interests-list">
+                        <div class="interest-item">🎮 Video Games</div>
+                        <div class="interest-item">🤖 AI & Machine Learning</div>
+                        <div class="interest-item">📰 Tech Industry Trends</div>
+                        <div class="interest-item">🎨 Digital & Traditional Art</div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <hr style="width: 5%; margin: 250px auto 150px; ">
-        <div class="contact-me">
-          <h2 style="font-weight: bold;">Get In Touch</h2>
-          <h3 style="margin: 20px 0 50px 0;">If you love video games or anime then we have somethibg to talk about.</h3>
-          <a class="btn" href="mailto:laurelld@gmail.com">CONTACT ME</a>
+
+                 <!-- Projects Page -->
+         <div id="projects" class="page">
+             <div class="container">
+                 <h2 class="section-title">My Projects</h2>
+                 
+                 <!-- Project Category Tabs -->
+                 <div class="project-tabs">
+                     <button class="tab-btn active" data-category="all">All Projects</button>
+                     <button class="tab-btn" data-category="web-dev">Web Development</button>
+                     <button class="tab-btn" data-category="software-eng">Software Engineering</button>
+                 </div>
+                 
+                 <div class="projects-grid">
+                                         <div class="project-card" data-category="web-dev">
+                                                 <div class="project-image">
+                            <img src="images/expense-tracker.png" alt="Expense Tracker">
+                        </div>
+                        <div class="project-content">
+                            <h3>Expense Tracker - MERN Stack</h3>
+                            <p>A comprehensive full-stack expense tracking application with user authentication, interactive charts, recurring transactions, Excel export, and profile management.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Express</span>
+                                <span class="tech-tag">JWT</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/GingerBrains/expense-tracker" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                                <a href="https://expense-tracker-two-alpha-21.vercel.app/login" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                                         <div class="project-card" data-category="software-eng">
+                                                 <div class="project-image">
+                            <img src="images/mock-gen.png" alt="Mock Gen">
+                        </div>
+                        <div class="project-content">
+                            <h3>Mock Gen - CLI Data Generator</h3>
+                            <p>A Python CLI tool for generating dummy data for testing and development. Features customizable JSON templates and multiple output formats.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">CLI</span>
+                                <span class="tech-tag">JSON</span>
+                                <span class="tech-tag">CSV</span>
+                                <span class="tech-tag">SQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/GingerBrains/mock-gen" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                                         <div class="project-card" data-category="software-eng">
+                                                 <div class="project-image">
+                            <img src="images/vending-machine.png" alt="Vending Machine">
+                        </div>
+                        <div class="project-content">
+                            <h3>Candy Vending Machine - Java OOP</h3>
+                            <p>A comprehensive Java application simulating a candy vending machine with transaction processing, inventory management, and state persistence.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">OOP</span>
+                                <span class="tech-tag">Maven</span>
+                                <span class="tech-tag">Log4j</span>
+                                <span class="tech-tag">File I/O</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/GingerBrains/Vending-machine" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                                         <div class="project-card" data-category="software-eng">
+                                                 <div class="project-image">
+                            <img src="images/snake-and-ladder.png" alt="Snake and Ladders">
+                        </div>
+                        <div class="project-content">
+                            <h3>Snake and Ladders - Multithreaded Game</h3>
+                            <p>A Java multithreaded simulation of the classic Snake and Ladders game with four concurrent players and real-time game logging.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Multithreading</span>
+                                <span class="tech-tag">ExecutorService</span>
+                                <span class="tech-tag">Concurrency</span>
+                                <span class="tech-tag">Log4j</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/GingerBrains/snakes-and-ladders" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      
-      
-      <div class="bottom-container">
-        <a class="footer-link" href="https://www.linkedin.com/in/laurel-dsouza-8169481a4/">LinkedIn</a>
-        <a class="footer-link" href="https://twitter.com/DsouzaLaurel">Twitter</a>
-        <a class="footer-link" href="https://github.com/GingerBrains">GitHub</a>
-        <p class="copyright">© 2021 Laurel Dsouza.</p>
-      </div>
-      
+
+        <!-- Contact Page -->
+        <div id="contact" class="page">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <p class="contact-description">
+                        I'm always interested in new opportunities and exciting projects. 
+                        Feel free to reach out if you'd like to work together or just say hello!
+                    </p>
+                                         <div class="contact-buttons">
+                         <a href="mailto:laurelld@gmail.com" class="btn btn-primary">
+                             <i class="fas fa-envelope"></i> Email Me
+                         </a>
+                         <a href="https://github.com/GingerBrains" class="btn btn-secondary" target="_blank">
+                             <i class="fab fa-github"></i> GitHub
+                         </a>
+                         <a href="https://www.linkedin.com/in/laurel-dsouza/" class="btn btn-secondary" target="_blank">
+                             <i class="fab fa-linkedin"></i> LinkedIn
+                         </a>
+                     </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
