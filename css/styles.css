@@ -144,11 +144,6 @@ body {
     transform: translateY(-2px);
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
-
 .card h2 {
     font-size: 1.4rem;
     font-weight: 700;
@@ -506,7 +501,7 @@ body {
     border-radius: 8px;
     transition: all 0.3s ease;
     cursor: pointer;
-}
+  }
 
 .btn-primary {
     background: #3b82f6;
@@ -607,45 +602,9 @@ body {
 /* Responsive Design */
 @media (max-width: 1024px) {
     .content-grid {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto auto auto auto;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto auto auto auto auto auto auto !important;
         gap: 15px;
-        max-width: 1200px;
-    }
-    
-    .technologies {
-        grid-column: 1;
-        grid-row: 1;
-    }
-    
-    .name-card {
-        grid-column: 1;
-        grid-row: 2;
-    }
-    
-    .who-am-i {
-        grid-column: 1;
-        grid-row: 3;
-    }
-    
-    .education {
-        grid-column: 1;
-        grid-row: 4;
-    }
-    
-    .skills {
-        grid-column: 1;
-        grid-row: 5;
-    }
-    
-    .github-card {
-        grid-column: 1;
-        grid-row: 6;
-    }
-    
-    .interests {
-        grid-column: 1;
-        grid-row: 7;
     }
     
     .tech-grid {
@@ -674,6 +633,43 @@ body {
     
     .content-grid {
         padding: 0 15px;
+        grid-template-columns: 1fr !important;
+        grid-template-rows: auto auto auto auto auto auto auto !important;
+    }
+    
+    .technologies {
+        grid-column: 1 !important;
+        grid-row: 1 !important;
+    }
+    
+    .name-card {
+        grid-column: 1 !important;
+        grid-row: 2 !important;
+    }
+    
+    .who-am-i {
+        grid-column: 1 !important;
+        grid-row: 3 !important;
+    }
+    
+    .education {
+        grid-column: 1 !important;
+        grid-row: 4 !important;
+    }
+    
+    .skills {
+        grid-column: 1 !important;
+        grid-row: 5 !important;
+    }
+    
+    .github-card {
+        grid-column: 1 !important;
+        grid-row: 6 !important;
+    }
+    
+    .interests {
+        grid-column: 1 !important;
+        grid-row: 7 !important;
     }
     
     .card {
@@ -686,10 +682,6 @@ body {
     
     .name-card h2 {
         font-size: 1.5rem;
-    }
-    
-    .title-card h2 {
-        font-size: 1.2rem;
     }
     
     .tech-grid {
@@ -718,19 +710,19 @@ body {
         justify-content: center;
     }
     
-         .section-title {
-         font-size: 2rem;
-     }
-     
-     .project-tabs {
-         gap: 8px;
-         margin-bottom: 30px;
-     }
-     
-     .tab-btn {
-         padding: 10px 20px;
-         font-size: 13px;
-     }
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .project-tabs {
+        gap: 8px;
+        margin-bottom: 30px;
+    }
+    
+    .tab-btn {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -880,13 +872,6 @@ body {
 }
 
 /* Project Card Filtering */
-.project-card {
-    transition: opacity 0.4s ease, transform 0.4s ease;
-    opacity: 1;
-    transform: scale(1);
-    pointer-events: auto;
-}
-
 .project-card.hidden {
     opacity: 0 !important;
     transform: scale(0.8) !important;
