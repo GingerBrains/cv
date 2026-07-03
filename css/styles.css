@@ -78,7 +78,7 @@ body {
 .content-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto auto auto;
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
@@ -229,9 +229,36 @@ body {
     min-height: 250px;
 }
 
-/* Experience Card - Remove from grid since we're reorganizing */
+/* Experience Card - Full Width Row */
 .experience {
-    display: none;
+    grid-column: 1 / 4;
+    grid-row: 4;
+    min-height: auto;
+}
+
+.experience .experience-item {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #374151;
+}
+
+.experience .experience-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.experience .experience-item h3 {
+    color: #60a5fa;
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+
+.experience .experience-item p {
+    color: #9ca3af;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    margin-bottom: 8px;
 }
 
 .education-item {
@@ -603,7 +630,7 @@ body {
 @media (max-width: 1024px) {
     .content-grid {
         grid-template-columns: 1fr !important;
-        grid-template-rows: auto auto auto auto auto auto auto !important;
+        grid-template-rows: auto auto auto auto auto auto auto auto !important;
         gap: 15px;
     }
     
@@ -634,7 +661,7 @@ body {
     .content-grid {
         padding: 0 15px;
         grid-template-columns: 1fr !important;
-        grid-template-rows: auto auto auto auto auto auto auto !important;
+        grid-template-rows: auto auto auto auto auto auto auto auto !important;
     }
     
     .technologies {
@@ -671,7 +698,12 @@ body {
         grid-column: 1 !important;
         grid-row: 7 !important;
     }
-    
+
+    .experience {
+        grid-column: 1 !important;
+        grid-row: 8 !important;
+    }
+
     .card {
         padding: 15px;
     }

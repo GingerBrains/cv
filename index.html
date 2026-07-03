@@ -3,7 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laurel - Portfolio</title>
+    <title>Laurel Dsouza - Portfolio</title>
+    <meta name="description" content="Laurel Dsouza is a Software Engineer building production AI systems and full-stack applications — LLM/RAG pipelines, Java/Spring Boot backends, and React frontends.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Laurel Dsouza - Portfolio">
+    <meta property="og:description" content="Software Engineer building production AI systems and full-stack applications — LLM/RAG pipelines, Java/Spring Boot backends, and React frontends.">
+    <meta property="og:url" content="https://laureldsouza.com">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Laurel Dsouza - Portfolio">
+    <meta name="twitter:description" content="Software Engineer building production AI systems and full-stack applications — LLM/RAG pipelines, Java/Spring Boot backends, and React frontends.">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -61,12 +72,16 @@
                     <div class="tech-grid">
                         <div class="tech-item">Java</div>
                         <div class="tech-item">Python</div>
-                        <div class="tech-item">C#</div>
+                        <div class="tech-item">JavaScript</div>
+                        <div class="tech-item">SQL</div>
+                        <div class="tech-item">Spring Boot</div>
                         <div class="tech-item">React</div>
-                        <div class="tech-item">MongoDB</div>
-                        <div class="tech-item">Git</div>
-                        <div class="tech-item">Bash</div>
+                        <div class="tech-item">FastAPI</div>
+                        <div class="tech-item">PostgreSQL</div>
+                        <div class="tech-item">Docker</div>
+                        <div class="tech-item">Kubernetes</div>
                         <div class="tech-item">AWS</div>
+                        <div class="tech-item">LangGraph</div>
                     </div>
                 </div>
 
@@ -87,9 +102,11 @@
                 <div class="card who-am-i">
                     <h2>Who am I?</h2>
                     <p>
-                        Computer Engineering graduate with an MSc in Machine Learning and experience in Python, Java, SaaS 
-                        systems, and cloud-native infrastructure. I am passionate about creating software solutions that 
-                        solve real-world problems. If you have a project that you would like to work on, feel free to contact me.
+                        Software Engineer based in Ireland, building production AI systems and full-stack applications
+                        at the Ryan Institute, University of Galway. I design RAG pipelines, self-host LLMs on AWS, and
+                        build agentic workflows, alongside Java/Spring Boot backends and React frontends. My MSc in
+                        Mathematical Modelling and Machine Learning from UCC grounds this in statistics and deep learning.
+                        I'm always interested in roles combining serious engineering with applied AI — feel free to get in touch.
                     </p>
                 </div>
 
@@ -98,23 +115,25 @@
                     <h2>Key Skills</h2>
                     <div class="skills-list">
                         <div class="skill-item">Full Stack Development</div>
-                        <div class="skill-item">Problem Solving</div>
+                        <div class="skill-item">LLM & RAG Systems</div>
                         <div class="skill-item">System Design</div>
                         <div class="skill-item">Database Design</div>
-                        <div class="skill-item">Version Control</div>
+                        <div class="skill-item">Cloud & DevOps</div>
                     </div>
                 </div>
 
                 <!-- Experience Card -->
                 <div class="card experience">
-                    <h2>Experience</h2>
+                    <h2>Work Experience</h2>
                     <div class="experience-item">
-                        <h3>Project Development</h3>
-                        <p>Built multiple full-stack applications using modern technologies and best practices.</p>
-                    </div>
-                    <div class="experience-item">
-                        <h3>Open Source</h3>
-                        <p>Active contributor to various open source projects, collaborating with developers worldwide.</p>
+                        <h3>Research Assistant</h3>
+                        <p>University of Galway (Ryan Institute) · Contract · May 2025 - Present · Galway, Ireland · On-site</p>
+                        <ul class="education-details">
+                            <li>Software Engineer building production AI systems and full-stack research applications as part of the Agri-Immanence project</li>
+                            <li>Built a greenhouse digital twin dashboard with Spring Boot and React, visualising real-time sensor data (temperature, humidity, CO2, light levels) backed by PostgreSQL on AWS</li>
+                            <li>Developed an LLM-powered knowledge assistant with a hybrid RAG pipeline, agentic reasoning, a streaming chat UI, and a self-hosted language model serving layer</li>
+                            <li>Handled backend development, REST API design, Docker containerisation, GitHub Actions CI/CD, database schema design, and automated evaluation and testing across both systems</li>
+                        </ul>
                     </div>
                 </div>
 
@@ -234,10 +253,35 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="project-card" data-category="web-dev">
+                        <div class="project-image">
+                            <img src="images/expense-tracker.png" alt="Action Item Tracker">
+                        </div>
+                        <div class="project-content">
+                            <h3>Action Item Tracker</h3>
+                            <p>A full-stack web application for tracking meeting action items, with JWT-based authentication and role-based access so admins manage meetings and assignments while members see only the items assigned to them.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">Spring Boot</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Docker</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/GingerBrains/action-item-tracker" class="project-link" target="_blank">
+                                    <i class="fab fa-github"></i> Code
+                                </a>
+                                <a href="https://actiontracker.laureldsouza.com" class="project-link" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
       </div>
-      
+
         <!-- Contact Page -->
         <div id="contact" class="page">
             <div class="container">
